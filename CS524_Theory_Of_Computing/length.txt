@@ -1,0 +1,32 @@
+Length:
+
+Design a TM which expects a unary string (like a^n) as input, and outputs a binary representation of n. (Like Sipser's example, try to do this in O(nlogn) steps. Harder: restore the input string.)
+
+
+M is Turing Machine that meet the requirement of above function, and 
+
+M = “On input string {w = a^n | n>= 0):
+    1. Sweep left to right across the tape, crossing off every other ‘a’.
+    2. If there are two ‘a’ left, move the head to the left-hand of the tape, and 
+       add a ’10’ in the front of the string. Delete all the ‘x’ and halt.
+    3. If there only one ‘a’ left, move the head to the left-hand of the tape, 
+       and add a ’1’ in the front of the string. Delete all the ‘x’ and halt.
+    4. If in stage 1 the number of ‘a’ swept is different from the number of ‘a’ left,
+       move the head to the left-hand of the tape, and add a ‘1’ in the front of the
+       string. If the swept number is equal to the left, likely move the head to the 
+       left-hand of the tape, and add a ‘0’.
+    5. Go to stage 1.”
+
+(Actually 2. and 3. can be omitted because when there 2 ‘a’ left, when we do the first step, we will cross off 1 ‘a’ and have 1 ‘a’ left, which is equal to the situation in the
+4. step, where we only need to first add a ‘0’, and then add a ‘1’ because after crossing off 1 ‘a’ from twos, we will have one 1 ‘a’ left, and then when we cross off 1 ‘a’ from 1 ‘1’, we will have 0 ‘a’ left, which means the swept number and left number is different and we need to add a 1’; for 3. the situation has been described).
+
+As every time the number of a in the string will be cut nearly into half, the crossing off
+step will take O(logn) time, also because the machine will go through all the string every time, and write characters based on the crossing off operations, the total running time will be O(nlogn).
+
+Example:
+
+1) a^4: output will be 100.
+
+2) a^10: output will be 1010.
+
+3) a^13: output will be 1101.
