@@ -1,0 +1,5 @@
+sta
+start 3
+start 4
+report
+quit
