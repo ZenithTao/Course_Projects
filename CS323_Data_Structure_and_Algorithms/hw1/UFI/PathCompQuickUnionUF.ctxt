@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=N
+comment0.target=PathCompQuickUnionUF(int)
+comment1.params=p
+comment1.target=int\ find(int)
+numComments=2

@@ -1,0 +1,58 @@
+For this homework you write TwoEc (in file TwoEC.java), a class which
+computes the 2-edge-connected components of a given undirected Graph.
+Our TwoEC API is similar to the book CC example.  You should read the
+comments in TwoEC.java, since they outline the main requirements and
+technical steps.
+
+For now this is a "bluej-free" homework, it is designed to be done
+from the command line (edit with your favorite editor, but compile
+and test via the command line).
+
+You may still use bluej (or some other IDE) if you like, to edit,
+compile, and invoke the Driver test methods.  But you will need a
+terminal on a lab machine (or something with "make") to compare your
+output to the expected output.
+
+To get started, you first need to make your personal copy of the hw3
+files.  On a lab machine, you may do the following:
+
+   cd ~cs323000/share/hw3
+   make copy
+   cd ~/cs323/hw3
+
+Those commands copy the files to your ~/cs323/hw3 directory, and then
+set ~/cs323/hw3/ as your current directory.
+
+Once you are in your own directory, the Makefile defines some
+useful commands.  Use just "make" to list them:
+
+% make
+The Makefile defines the following actions:
+ make help      --- print this help (default action)
+ make copy      --- make your initial personal copy of these files
+ make compile   --- recompile if needed
+ make run1      --- run Driver on run1.txt
+ make run2      --- run Driver on run2.txt
+ make run3      --- run Driver on run3.txt
+ make run4      --- run Driver on run4.txt
+ make movies    --- run Driver on movies.txt (a large input)
+ make turnin    --- turn in your work
+ make clean     --- remove less important files
+%
+
+
+In each test, we invoke the Driver on an input file (some *.txt).  The
+Driver exercises your TwoCC class on that Graph, we capture its
+output, and we compare that to the expected output (*-exp.txt).
+
+Note the Driver reads graphs in SymbolGraph format, so each vertex
+appears as a name (a String) rather than a number in the input.
+
+
+
+TECHNICAL NOTE: the file book.jar contains compiled versions of most
+of the classes defined in share/book/, and we use several of them (in
+particular Graph, SymbolGraph, StdOut) in this project.  Our Makefile
+already tells java and javac to look in book.jar for classes.  But if
+you want to compile/run this homework as a project inside some IDE,
+you will need to add book.jar to the project "classpath".

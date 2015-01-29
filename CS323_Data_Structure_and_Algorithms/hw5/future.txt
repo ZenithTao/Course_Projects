@@ -1,0 +1,4 @@
+In future semesters, could trade this in for something related
+to maxflow.  For example, implement the "fattest path" rule,
+and then do an empirical comparison to the "shortest path" rule.
+

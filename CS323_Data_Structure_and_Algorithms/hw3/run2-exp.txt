@@ -1,0 +1,10 @@
+Reading run2.txt with separator '/' ...
+Done, got graph object G
+G has 8 vertices and 9 edges
+G has 1 connected components
+G has 2 2EC components
+B is first in a 2EC component of size 4
+C is first in a 2EC component of size 4
+Big bridges (both sides having 2EC size at least 2):
+B (size 4) to C (size 4)
+Done.

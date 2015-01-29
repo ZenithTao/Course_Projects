@@ -1,0 +1,13 @@
+Reading movies.txt with separator '/' ...
+Done, got graph object G
+G has 119429 vertices and 202927 edges
+G has 33 connected components
+G has 84694 2EC components
+'Breaker' Morant (1980) is first in a 2EC component of size 34726
+101 Reykjavík (2000) is first in a 2EC component of size 4
+Babam Ve Oglum (2005) is first in a 2EC component of size 4
+Hababam sinifi (1975) is first in a 2EC component of size 5
+Also saw 84690 2EC components of size one
+Big bridges (both sides having 2EC size at least 2):
+101 Reykjavík (2000) (size 4) to Abril, Victoria (size 34726)
+Done.

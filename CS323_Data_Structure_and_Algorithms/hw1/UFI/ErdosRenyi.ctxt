@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=uf\ seed
+comment0.target=int\ trial(UFI,\ long)
+comment1.params=T\ N\ seed\ fac
+comment1.target=void\ trials(int,\ int,\ long,\ ErdosRenyi.UFIFactory)
+comment2.params=args
+comment2.target=void\ main(java.lang.String[])
+comment3.params=N
+comment3.target=UFI\ make(int)
+comment4.params=N
+comment4.target=UFI\ make(int)
+comment5.params=N
+comment5.target=UFI\ make(int)
+comment6.params=N
+comment6.target=UFI\ make(int)
+comment7.params=N
+comment7.target=UFI\ make(int)
+comment8.params=
+comment8.target=void\ main()
+numComments=9

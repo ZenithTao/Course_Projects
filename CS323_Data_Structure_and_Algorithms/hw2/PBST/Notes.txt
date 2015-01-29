@@ -1,0 +1,29 @@
+Copy these files to your cs323/hw2/, and edit PRedBlackBST.java
+as directed by the TODO comments.
+
+You want to modify class PRedBlackBST, which extends PBST (mostly seen
+last time) so that PRedBlackBST is a persistent left-leaning red-black
+with insertion (insertion is the "put" method).
+
+You should mimic the "ephemeral" methods from the book, for example:
+
+   http://mathcs.emory.edu/~cs323000/book/RedBlackLiteBST.java
+
+The basic trick is that whenever the book code would modify a Node,
+you instead need to create a new Node, taking its place.
+
+For 10 points extra credit, you can also try to implement a
+stack-based tree iterator, which is somewhat more efficient than the
+iterator I've defined in PBST. Let me know by email if you succeed
+with this part.
+
+This is due 9pm Tuesday 9/21 (written part 5pm).
+
+The turnin procedure is not determined yet, but possibly we'll try the
+"turnin" script again, I'm told it should work now.  Stay tuned.
+
+There ought to be a better test harness.  For now, you want to
+eliminate all the potential "check" error messages when you do this:
+
+    javac *.java
+    java Driver

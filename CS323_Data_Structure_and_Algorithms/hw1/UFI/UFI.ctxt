@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=p
+comment0.target=int\ find(int)
+comment1.params=
+comment1.target=int\ count()
+comment2.params=p\ q
+comment2.target=boolean\ connected(int,\ int)
+comment3.params=p\ q
+comment3.target=void\ union(int,\ int)
+comment4.params=
+comment4.target=int\ size()
+comment5.params=
+comment5.target=int\ sumDepths()
+numComments=6

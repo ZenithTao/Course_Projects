@@ -1,0 +1,56 @@
+Testing PBST
+Phase 1: book 'SEARCHEXAMPLE' input
+
+h[0] = new PBST();
+h[1] = h[0].put("S", 0);
+h[2] = h[1].put("E", 1);
+h[3] = h[2].put("A", 2);
+h[4] = h[3].put("R", 3);
+h[5] = h[4].put("C", 4);
+h[6] = h[5].put("H", 5);
+h[7] = h[6].put("E", 6);
+h[8] = h[7].put("X", 7);
+h[9] = h[8].put("A", 8);
+h[10] = h[9].put("M", 9);
+h[11] = h[10].put("P", 10);
+h[12] = h[11].put("L", 11);
+h[13] = h[12].put("E", 12);
+
+All these trees are still usable:
+
+h[0] is []
+h[0].rank("S") == 0, h[0].get("E") == null
+h[1] is [(S, 0)]
+h[1].rank("S") == 0, h[1].get("E") == null
+h[2] is [(E, 1), (S, 0)]
+h[2].rank("S") == 1, h[2].get("E") == 1
+h[3] is [(A, 2), (E, 1), (S, 0)]
+h[3].rank("S") == 2, h[3].get("E") == 1
+h[4] is [(A, 2), (E, 1), (R, 3), (S, 0)]
+h[4].rank("S") == 3, h[4].get("E") == 1
+h[5] is [(A, 2), (C, 4), (E, 1), (R, 3), (S, 0)]
+h[5].rank("S") == 4, h[5].get("E") == 1
+h[6] is [(A, 2), (C, 4), (E, 1), (H, 5), (R, 3), (S, 0)]
+h[6].rank("S") == 5, h[6].get("E") == 1
+h[7] is [(A, 2), (C, 4), (E, 6), (H, 5), (R, 3), (S, 0)]
+h[7].rank("S") == 5, h[7].get("E") == 6
+h[8] is [(A, 2), (C, 4), (E, 6), (H, 5), (R, 3), (S, 0), (X, 7)]
+h[8].rank("S") == 5, h[8].get("E") == 6
+h[9] is [(A, 8), (C, 4), (E, 6), (H, 5), (R, 3), (S, 0), (X, 7)]
+h[9].rank("S") == 5, h[9].get("E") == 6
+h[10] is [(A, 8), (C, 4), (E, 6), (H, 5), (M, 9), (R, 3), (S, 0), (X, 7)]
+h[10].rank("S") == 6, h[10].get("E") == 6
+h[11] is [(A, 8), (C, 4), (E, 6), (H, 5), (M, 9), (P, 10), (R, 3), (S, 0), (X, 7)]
+h[11].rank("S") == 7, h[11].get("E") == 6
+h[12] is [(A, 8), (C, 4), (E, 6), (H, 5), (L, 11), (M, 9), (P, 10), (R, 3), (S, 0), (X, 7)]
+h[12].rank("S") == 8, h[12].get("E") == 6
+h[13] is [(A, 8), (C, 4), (E, 12), (H, 5), (L, 11), (M, 9), (P, 10), (R, 3), (S, 0), (X, 7)]
+h[13].rank("S") == 8, h[13].get("E") == 12
+
+Created 43 nodes in Phase 1.
+
+Phase 2: starting with h[0], inserting 100 keys in increasing order
+Created 5050 nodes in Phase 2.
+
+final check() succeeded
+
