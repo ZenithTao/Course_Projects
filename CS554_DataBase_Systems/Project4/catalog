@@ -1,0 +1,5 @@
+EMP     FNAME     C     0   7
+EMP     LNAME     C     8   9
+EMP     SEX       C    16   2
+EMP     DNO       I    20   4
+EMP     SALARY    F    24   8

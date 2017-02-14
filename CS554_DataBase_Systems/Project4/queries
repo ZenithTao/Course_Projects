@@ -1,0 +1,41 @@
+DELETE TABLE EMP
+GO
+----------------------------------------------------
+DELETE TABLE EMP
+WHERE  FNAME = 'Alicia'
+GO
+
+DELETE TABLE EMP
+WHERE  LNAME <= 'Bx'
+GO
+
+DELETE TABLE EMP
+WHERE  DNO = 4
+GO
+----------------------------------------------------
+DELETE TABLE EMP
+WHERE  SALARY >= 54000.0
+GO
+
+DELETE TABLE EMP
+WHERE  SALARY >= 42000
+GO
+
+DELETE TABLE EMP
+WHERE  2*SALARY >= 79000
+GO
+
+DELETE TABLE EMP
+WHERE  (SALARY + 10000) >= 47000
+GO
+
+DELETE TABLE EMP
+WHERE  SEX = 'M'
+  AND  SALARY <= 30000
+GO
+----------------------------------------------------
+DELETE TABLE EMP
+WHERE  (SEX = 'F' OR SALARY <= 30000)
+  AND  DNO = 5
+GO
+
